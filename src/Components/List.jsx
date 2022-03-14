@@ -1,15 +1,15 @@
 import React from "react";
-import { ListInput } from "./ListIntput.jsx";
+import { ListInput } from "./ListInput.jsx";
 import {useState} from "react"
 import { ListItem } from "./ListItem.jsx";
 
-export const List = () => {
+ const List = () => {
   const [list, setList] = useState([])
   
   const addList = (data) => {
     setList([...list, data])
   }
-
+console.log(list)
 
 return <div>
   <ListInput addList = {addList} />
@@ -18,3 +18,5 @@ return <div>
   ))}
 </div>
 };
+
+export{List}

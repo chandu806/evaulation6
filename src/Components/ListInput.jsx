@@ -1,5 +1,6 @@
 import React from "react";
 import { useState} from "react";
+// import addList from "./ListItem.jsx"
 
 export const ListInput = ({addList}) => {
   const [ text,setText] = useState("")
